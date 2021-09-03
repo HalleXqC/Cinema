@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.root{
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    .singlePage{
+        width: 90%;
+        min-height: 50vh;
+        box-shadow: 0 0 10px #d22215;
+        border-radius: 6px;
+        padding-bottom: 3rem;
+        .header{
+            display: flex;
+            img{
+                width: 400px;
+                height: 450px;
+                margin-right: 1.5rem;
+            }
+            .headerRight{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                h6{
+                    color: white;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin: 9px 0;
+                    span{
+                        font-weight: 400;
+                    }
+                }
+                h3{
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 600;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    text-shadow: 1px 1px 1px #d22215;
+                    margin-bottom: 8px;
+                }
+                p{
+                    margin: 9px 0;
+                    color: white;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+        .movieSchedule{
+            position: relative;
+            width: 90%;
+            padding: 1rem 5%;
+            margin: 1rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+            color: white;
+            padding-bottom: 1.5rem;
+            h1{
+                font-weight: 300;
+                margin: 0;
+                padding-left: 1rem;
+            }
+            .innerMovieSchedule{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                margin-bottom: 2rem;
+                div{
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgba(255 , 255 , 255 , 0.9);
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+                span{
+                    border: 1px solid rgba(255 , 255 , 255 , 0.5);
+                    padding: 1rem 1.5rem;
+                    font-size: 18px;
+                    cursor: default;
+                    color: white;
+                    font-weight: 400;
+                    margin-bottom: 6px;
+                    background: -webkit-linear-gradient(to right, #200122, #6f0000);
+                    background: linear-gradient(to left, #360217, #6f0000);
+                }
+                .disactiveDiv{
+                    opacity: 0.25;
+                }
+                .disactiveDiv,
+                .disactiveSpan{
+                    cursor: not-allowed;
+                }
+                .activeSpan,
+                .activeDiv{
+                    cursor: url('./img/positive.png'), pointer;
+                }
+            }
+            .bookingBtn{
+                position: relative;
+                background: radial-gradient(#d24b15 , #d24b15);
+                color: white;
+                border: none;
+                outline: none;
+                padding: 0.75rem 1.25rem;
+                border-radius: 10px;
+                font-size: 0.9rem;
+                font-family: 'Rubik', sans-serif;
+                text-transform: uppercase;
+                transition: 0.3s;
+                z-index: 5;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover{
+                    background: radial-gradient(rgb(241, 151, 115) , #d24b15);
+                    box-shadow: 0 0 0pt 1pt rgba(255,255,255,0.6);
+                }
+                &:active{
+                    background: radial-gradient(#f7825e , #d22b15);
+                }
+            }
+        }
+        .main{
+            width: 100%;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .iframe{
+                width: 70% !important;
+                height: 450px !important;
+                box-shadow: 0 0 15px rgba(255 , 255 , 255 , 0.7);
+            }
+            &:before{
+                content: 'Трейлер:';
+                font-size: 25px;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                color: white;
+                top: -12%;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+        .backBtnDiv{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            .backBtn{
+                position: relative;
+                background: radial-gradient(#d22215 , #d22215);
+                color: white;
+                border: none;
+                outline: none;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                font-size: 1.2rem;
+                font-family: 'Rubik', sans-serif;
+                text-transform: uppercase;
+                transition: 0.3s;
+                z-index: 5;
+                cursor: pointer;
+                text-decoration: none;
+                margin: 0 auto;
+                &:hover{
+                    background: radial-gradient(#f7695e , #d22215);
+                    box-shadow: 0 0 0pt 1pt rgba(255,255,255,0.6);
+                }
+                &:active{
+                    background: radial-gradient(#f7825e , #d24115);
+                }
+            }
+        }
+    }
+}

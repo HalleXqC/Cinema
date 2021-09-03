@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 0.625rem 10%; 
+    ul{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        color: white;
+        img{
+            width: 12px;
+            height: 10px;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            .link{
+                position: relative;
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                color: white;
+                display: block;
+                text-decoration: none;
+                transition: 0.3s;
+                &:hover{
+                    color: #e67269;
+                }
+                &:active{
+                    color: #e68d69;
+                }
+                &:before{
+                    height: 2px;
+                }
+            }
+            #link1{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0%;
+                    background-color: white;
+                    color: white;
+                    animation: link1 1s ease-in-out 1 forwards;
+                }
+            }
+            #link2{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0%;
+                    background-color: white;
+                    color: white;
+                    animation: link2 0.5s ease-in-out 1.2s 1 forwards;
+                }
+            }
+            #link3{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0%;
+                    background-color: white;
+                    color: white;
+                    animation: link3 0.7s ease-in-out 1.9s 1 forwards; 
+                }
+            }
+            #link4{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0%;
+                    background-color: white;
+                    color: white;
+                    animation: link4 0.5s ease-in-out 2.8s 1 forwards; 
+                }
+            }
+            #link5{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0%;
+                    background-color: white;
+                    color: white;
+                    animation: link5 1s ease-in-out 3.5s 1 forwards; 
+                }
+            }
+            .active{
+                color: #D22215;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+
+@keyframes link1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes link2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes link3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes link4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes link5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+    .root{
+        ul{
+            li{
+                .link{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    .root{
+        ul{
+            li{
+                .link{
+                    font-size: 15px;
+                    &:before{
+                        height: 1px;
+                    }
+                }
+            }
+            img{
+                width: 9px;
+                height: 7px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .root{
+        padding: 0 3%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .root{
+        ul{
+            li{
+                .link{
+                    font-size: 13px;
+                }
+            }
+            img{
+                width: 8px;
+                height: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px){
+    .root{
+        padding: 0 2.5%;
+        ul{
+            li{
+                .link{
+                    font-size: 12px;
+                }
+            }
+            img{
+                width: 7px;
+                height: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            width: 25%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            img{
+                display: none;
+            }
+            li{
+                margin-bottom: 0.625rem;
+                .link{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px){
+    .root{
+        ul{
+            width: 40%;
+        }
+    }
+}
+@media screen and (max-width: 410px){
+    .root{
+        ul{
+            width: 30%;
+            li{
+                .link{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 340px){
+    .root{
+        ul{
+            width: 90%;
+            li{
+                .link{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.root{
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto Condensed', sans-serif;
+    width: 85%;
+    padding: 0 7.5%;
+    position: relative;
+    min-height: 40vh;
+    padding-bottom: 5rem;
+    transition: 0.3s;
+    color: white;
+    .text{
+        width: 100%;
+        margin-bottom: 2rem;
+        h5{
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+        ul{
+            list-style: none;
+            li{
+                font-size: 17px;
+                color: white;
+                font-weight: 300;
+                line-height: 24px;
+                &:before{
+                    content: "•";
+                    color: red;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em
+                }
+            }
+        }
+        .button{
+            position: relative;
+            font-size: 20px;
+            color: #d22215;
+            border-bottom: 1px solid white;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 300;
+            &:hover{
+                color: #ee7168;
+            }
+            &:active{
+                color: #d24115;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                background: url('./img/rhombus.png');
+                background-size: 8px 6px;
+                width: 8px;
+                height: 6px;
+                bottom: -3.4px;
+                left: -6px;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                background: url('./img/rhombus.png');
+                background-size: 8px 6px;
+                width: 8px;
+                height: 6px;
+                bottom: -3.4px;
+                right: -6px;
+            }
+        }
+    }
+    .picParent{
+        width: 100%;
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+        border: 1px solid rgba(255 , 255 , 255 , 0.7);
+        transition: 0.3s ease-in-out;
+        cursor: zoom-in;
+        &:hover{
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+        .pic{
+            background: url('./img/ad_bg.jpg') center / cover no-repeat;
+            width: 100%;
+            height: 100%;
+            transition: 0.3s ease-in-out;
+            &:active{
+                transform: scale(1.6)
+                translateY(20%);
+            }
+        }
+    }
+}
