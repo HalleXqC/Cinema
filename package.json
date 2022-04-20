@@ -16,7 +16,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "swiper": "^6.8.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "webpack": "^4.44.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@babel/helper-compilation-targets": "^7.16.7",
+    "gh-pages": "^3.2.3",
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
